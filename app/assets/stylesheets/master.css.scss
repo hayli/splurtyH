@@ -1,3 +1,156 @@
 .clear {
 	clear:both;
 }
+
+header {
+  background: #1d0e28;
+  height: 100px;
+}
+.eyes {
+  width: 108px;
+  height: 54px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 15px;
+  margin-left: 0px;
+}
+.eye {
+  position: relative;
+  background: #FFF;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 2px;
+  overflow: hidden;
+  animation: rotate 4s infinite;
+}
+
+.eye::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #1d0e28;
+  animation: eye 4s infinite;
+}
+
+.eye::before,
+.eye {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+@keyframes rotate {
+  
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  62.5% {
+    transform: rotate(-90deg);
+  }
+  87.5% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes eye {
+  
+}
+@-webkit-keyframes eye {
+  0% {
+    top: 15px;
+    left: 15px;
+  }
+  12.5% {
+    top: 15px;
+    left: 5px;
+  }
+  25% {
+    top: 15px;
+    left: 15px;
+  }
+  37.5% {
+    top: 15px;
+    left: 25px;
+  }
+  50% {
+    top: 15px;
+    left: 15px;
+  }
+  62.5% {
+    top: 5px;
+    left: 15px;
+  }
+  87.5% {
+    top: 5px;
+    left: 15px;
+  }
+  100% {
+    top: 15px;
+    left: 15px;
+  }
+}
+
+h2 {
+	color: #FF00A8;
+}
+
+#logo-font {
+	/* Helvetica/Arial-based sans serif stack */
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+.slogan {
+	color: #FFF;
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-style: italic;
+}
+
+.links {
+	padding-top: 26px;
+}
+
+.links a {
+	color: #FFF;
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-size: 17px;
+	padding-left: 5px;
+	float: right;
+	margin-right: 20px;
+
+}
+
+/* mouse over link */
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* selected link */
+.links a:active {
+    color: #DEFF00;
+}
+
+header {
+  border-top: 9px solid #DEFF00;
+}
+
+hr {
+  clear:both;
+  margin: 0px;
+}
+
+
