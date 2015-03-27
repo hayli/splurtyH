@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
 .clear {
 	clear:both;
 }
@@ -100,13 +102,33 @@ header {
   }
 }
 
+h1 {
+	/*font-family: 'inconsolatamedium';*/
+	/* Helvetica/Arial-based sans serif stack */
+	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	letter-spacing: -1.5px;
+}
+
 h2 {
 	color: #FF00A8;
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-weight: normal;
+	letter-spacing: -1.5px;
+}
+
+h3 {
+	color: #bdc3c7;
+	font-family: 'Lobster', cursive;
 }
 
 #logo-font {
+	color: #FF00A8;
+	font-family: 'sansation_lightlight';
 	/* Helvetica/Arial-based sans serif stack */
-	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	letter-spacing: 0.5px;
 	font-weight: bold;
 	margin-top: 15px;
 	margin-bottom: 0px;
@@ -119,19 +141,16 @@ h2 {
 	font-style: italic;
 }
 
-.links {
-	padding-top: 26px;
-}
-
 .links a {
 	color: #FFF;
-	/* Modern Georgia-based serif stack */
-	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-	font-size: 17px;
 	padding-left: 5px;
 	float: right;
 	margin-right: 20px;
-
+	padding-top: 26px;
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-size: 17px;
+	/*font-weight: bold;*/
 }
 
 /* mouse over link */
