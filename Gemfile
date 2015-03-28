@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'simple_form'
+
 # Include twitter bootstrap-sass for responsive design
 gem 'bootstrap-sass', '~> 3.3.4'
 
