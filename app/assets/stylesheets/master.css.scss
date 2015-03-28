@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 
 .clear {
 	clear:both;
@@ -125,6 +125,10 @@ h3 {
 	font-family: 'Lobster', cursive;
 	text-align: center;
 	margin-top: 15%;
+}
+
+.logo:hover {
+	text-decoration: none;
 }
 
 #logo-font {
