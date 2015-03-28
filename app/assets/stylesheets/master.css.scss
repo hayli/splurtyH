@@ -13,7 +13,7 @@ header {
   height: 54px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 35%;
   margin-top: 15px;
   margin-left: 0px;
 }
@@ -103,24 +103,28 @@ header {
 }
 
 h1 {
-	/*font-family: 'inconsolatamedium';*/
 	/* Helvetica/Arial-based sans serif stack */
 	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	letter-spacing: -1.5px;
+	text-align: center;
+
 }
 
-h2 {
-	color: #FF00A8;
+h4 {
 	/* Modern Georgia-based serif stack */
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 	font-weight: normal;
+	font-size: 30px;
 	letter-spacing: -1.5px;
+	text-align: center;
 }
 
 h3 {
 	color: #bdc3c7;
 	font-family: 'Lobster', cursive;
+	text-align: center;
+	margin-top: 100px;
 }
 
 #logo-font {
@@ -149,7 +153,7 @@ h3 {
 	padding-top: 26px;
 	/* Modern Georgia-based serif stack */
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-	font-size: 17px;
+	font-size: 20px;
 	/*font-weight: bold;*/
 }
 

@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<div class="col-xs-3">
+		<div class="col-xs-2">
 			<div class="eyes">
   				<div class="eye eye-left"></div>
   				<div class="eye eye-right"></div>
@@ -19,7 +19,7 @@
 			<h2 id="logo-font">DOOMSAYER</h2>
 			Keeping you in the know when the end is nigh!
 		</div>
-		<div class="col-xs-5 links">
+		<div class="col-xs-6 links">
 			<%= link_to 'contribute', '#' %>
 			<%= link_to 'about', '#' %>
 		</div>
@@ -27,7 +27,18 @@
 	<hr />
 	<br class="clear" />
 
-<%= yield %>
+	<div class="container">
+		<%= yield %>
+	</div>
+
+	<div class="footer">
+		<div class="col-xs-6">
+			<%= link_to "This isn't enough, gimme more!", "#", :class => 'next-quote' %>
+		</div>
+		<div class="col-xs-6 blurb">
+			Proudly built by <a href="http://hayli.github.io">hayli C.</a><br />
+		</div>
+	</div>
 
 </body>
 </html>
