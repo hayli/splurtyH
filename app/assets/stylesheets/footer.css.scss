@@ -20,7 +20,7 @@ body {
 }
 
 .next-quote {
-    color: #00D2FF;
+    color: #FF00A8; 
     font-size: 25px;
     padding-left: 50px;
     /* Helvetica/Arial-based sans serif stack */
@@ -29,7 +29,7 @@ body {
 }
 
 .next-quote:hover {
-    color: #FF00A8;  
+    color: #00D2FF;    
     text-decoration: underline;
 }
 
@@ -45,12 +45,14 @@ body {
 
 
 .blurb a {
-  color: #bdc3c7;
+  color: black;
+  text-decoration: underline;
+  /*color: #bdc3c7;*/
 }
 
 /* mouse over link */
 .blurb a:hover {
-    text-decoration: underline;
+  color: #FF00A8;
 }
 
 /* selected link */

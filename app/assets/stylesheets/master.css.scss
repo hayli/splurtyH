@@ -124,7 +124,7 @@ h3 {
 	color: #bdc3c7;
 	font-family: 'Lobster', cursive;
 	text-align: center;
-	margin-top: 15%;
+	margin-top: 10%;
 }
 
 .logo:hover {
@@ -180,4 +180,26 @@ hr {
   margin: 0px;
 }
 
+.about-page {
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
 
+.about-page a{
+	color: black;
+	text-decoration: underline;
+}
+
+.about-page a:hover{
+	color: #FF00A8;
+}
+
+#about-title {
+	font-family: 'sansation_lightlight';
+}
+
+.about-quote {
+	color: #bdc3c7;
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
+}
