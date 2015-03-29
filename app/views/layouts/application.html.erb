@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Doomsayer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -21,7 +22,7 @@
 				<h2 id="logo-font">DOOMSAYER</h2>
 				<p id="tagline">Keeping you in the know when the end is nigh!</p>
 			</div>
-			<div class="col-xs-12 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
+			<div class="col-xs-12 col-xs-offset-2 col-sm-offset-0 col-sm-5 links">
 				<!-- Button trigger modal -->
 				<%= link_to 'contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
 				&nbsp;&nbsp;
@@ -69,7 +70,7 @@
 			<%= link_to "Bring on the doom!", root_path, :class => 'next-quote' %>
 		</div>
 		<div class="col-xs-12 col-sm-6 blurb" style="padding-top:10px;">
-			made by <a href="http://hayli.github.io">hayli C</a>. 2015 
+			made by <a href="http://hayli.github.io">hayli C</a>. 2015 <br /><br />
 		</div>
 	</div>
 

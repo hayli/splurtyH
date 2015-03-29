@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 
-@media (max-width: 750px) {
+@media (max-width: 360px) {
 	.nav-bar {
   		height: 120px;
 	} 
 	#logo-font {
-		font-size: 25px;
+		font-size: 20px;
 	}
 	#tagline {
 		display: none;
@@ -16,12 +16,23 @@
 		text-align: center;
 	}
 	.links {
-		font-size: 25px;
+		font-size: 10px;
 		text-align: center;
+	}
+	.eyes {
+		top: 70%;
+		left: 15%;
+	}
+	h1 {
+		font-size: 25px;
+		margin-top: 20%;
+	}
+	h3{
+		font-size: 20px;
 	}
 }
 
-@media (min-width: 751px){
+@media (min-width: 361px){
 	.nav-bar {
   		height: 100px;
 	}
@@ -34,6 +45,10 @@
 	.links {
 		margin-top: 25px;
 		text-align: right;
+	}
+	.eyes {
+		top: 50%;
+		left: 35%;
 	}
 }
 
@@ -49,8 +64,6 @@
   width: 108px;
   height: 54px;
   position: absolute;
-  top: 50%;
-  left: 35%;
   margin-top: 15px;
   margin-left: 0px;
 }
