@@ -8,22 +8,25 @@
 </head>
 <body>
 	<header>
-		<div class="col-xs-2">
-			<%= link_to root_path, :class => 'logo' do %>
-				<div class="eyes">
-						<div class="eye eye-left"></div>
-						<div class="eye eye-right"></div>
-				</div>
-			<% end %>
-		</div>
-		<div class="col-xs-5 slogan">
-			<h2 id="logo-font">DOOMSAYER</h2>
-			Keeping you in the know when the end is nigh!
-		</div>
-		<div class="col-xs-5 links">
-			<!-- Button trigger modal -->
-			<%= link_to 'contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
-			<%= link_to 'about', about_path %>
+		<div class="col-md-12 nav-bar">
+			<div class="col-xs-2">
+				<%= link_to root_path, :class => 'logo' do %>
+					<div class="eyes">
+							<div class="eye eye-left"></div>
+							<div class="eye eye-right"></div>
+					</div>
+				<% end %>
+			</div>
+			<div class="col-xs-10 col-sm-5 slogan">
+				<h2 id="logo-font">DOOMSAYER</h2>
+				<p id="tagline">Keeping you in the know when the end is nigh!</p>
+			</div>
+			<div class="col-xs-12 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
+				<!-- Button trigger modal -->
+				<%= link_to 'contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+				&nbsp;&nbsp;
+				<%= link_to 'about', about_path %>
+			</div>
 		</div>
 	</header>
 
@@ -33,23 +36,23 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Enter Your Doomsaying Here</h4>
+					<h4 class="modal-title" id="myModalLabel">Enter Your Doomsday Wisdom Here</h4>
 				</div>
 				<%= simple_form_for Quote.new do |f| %>
-					<div class="modal=body">
-							<%= f.input :saying %>
-							<%= f.input :author %>
+					<div class="modal=body" style="padding:20px;">
+							<%= f.input :saying, :label => "What's a sign for impeding doom?", :placeholder => "When McDonald’s got rid of the Arch Deluxe" %>
+							<br />
+							<%= f.input :author, :label => "Who can we thank for this sage advice?", :placeholder => "Steve Amiri" %>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<%= f.submit 'Add Quote', :class => 'btn btn-info' %>
+						<button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+						<%= f.submit 'add', :class => 'btn btn-info' %>
 					</div>
 				<% end %>			
 			</div>
 		</div>
 	</div>
 
-	<hr />
 	<br class="clear" />
 
 	<div class="container">
@@ -62,11 +65,11 @@
 	</div>
 
 	<div class="footer">
-		<div class="col-xs-6">
-			<%= link_to "This isn't enough, gimme more!", root_path, :class => 'next-quote' %>
+		<div class="col-xs-12 col-sm-6 nxt">
+			<%= link_to "Bring on the doom!", root_path, :class => 'next-quote' %>
 		</div>
-		<div class="col-xs-6 blurb" style="padding-top:10px;">
-			made by <a href="http://hayli.github.io">hayli C</a>. 2015 <br />
+		<div class="col-xs-12 col-sm-6 blurb" style="padding-top:10px;">
+			made by <a href="http://hayli.github.io">hayli C</a>. 2015 
 		</div>
 	</div>
 

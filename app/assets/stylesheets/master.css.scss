@@ -1,13 +1,50 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
+
+@media (max-width: 750px) {
+	.nav-bar {
+  		height: 120px;
+	} 
+	#logo-font {
+		font-size: 25px;
+	}
+	#tagline {
+		display: none;
+	}
+	.slogan {
+		margin-top: 10px;
+		text-align: center;
+	}
+	.links {
+		font-size: 25px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 751px){
+	.nav-bar {
+  		height: 100px;
+	}
+	#tagline {
+		display: block;
+	}
+	.slogan{
+		text-align: left;
+	}
+	.links {
+		margin-top: 25px;
+		text-align: right;
+	}
+}
+
 .clear {
 	clear:both;
 }
 
-header {
+.nav-bar {
   background: #1d0e28;
-  height: 100px;
 }
+
 .eyes {
   width: 108px;
   height: 54px;
@@ -17,6 +54,7 @@ header {
   margin-top: 15px;
   margin-left: 0px;
 }
+
 .eye {
   position: relative;
   background: #FFF;
@@ -103,8 +141,10 @@ header {
 }
 
 h1 {
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 	/* Helvetica/Arial-based sans serif stack */
-	font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 	font-weight: 600;
 	letter-spacing: -1.5px;
 	text-align: center;
@@ -115,7 +155,7 @@ h4 {
 	/* Modern Georgia-based serif stack */
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 	font-weight: normal;
-	font-size: 30px;
+	font-size: 25px;
 	letter-spacing: -1.5px;
 	text-align: center;
 }
@@ -123,8 +163,19 @@ h4 {
 h3 {
 	color: #bdc3c7;
 	font-family: 'Lobster', cursive;
+	font-weight: normal;
 	text-align: center;
 	margin-top: 10%;
+}
+
+#sign-num {
+	color: black;
+	margin-bottom: 0px;
+	/* Modern Georgia-based serif stack */
+	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+	font-weight: normal;
+	font-size: 22px;
+	text-align: center;
 }
 
 .logo:hover {
@@ -151,10 +202,6 @@ h3 {
 
 .links a {
 	color: #FFF;
-	padding-left: 5px;
-	float: right;
-	margin-right: 20px;
-	padding-top: 26px;
 	/* Modern Georgia-based serif stack */
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 	font-size: 25px;
@@ -202,4 +249,14 @@ hr {
 	color: #bdc3c7;
 	font-family: 'Lobster', cursive;
 	font-size: 20px;
+}
+
+.modal {
+	font-family: 'sansation_lightlight';
+	/* Helvetica/Arial-based sans serif stack */
+	/*font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+}
+
+::selection {
+	background-color: #DEFF00;
 }

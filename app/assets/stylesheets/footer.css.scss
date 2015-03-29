@@ -19,12 +19,33 @@ body {
   height: 60px;
 }
 
+@media (max-width: 750px) {
+  .blurb {
+    text-align: center;
+  }
+
+  .nxt {
+    text-align: center;
+  }
+}
+
+@media (min-width: 751px){
+    .blurb {
+    text-align: right;
+  }
+
+  .nxt {
+    text-align: left;
+  }
+}
+
 .next-quote {
     color: #FF00A8; 
     font-size: 25px;
-    padding-left: 50px;
+    /* Modern Georgia-based serif stack */
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
     /* Helvetica/Arial-based sans serif stack */
-    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-weight: 600;
 }
 
@@ -33,13 +54,12 @@ body {
     text-decoration: underline;
 }
 
+
 .blurb {
     /*font-family: 'sansation_lightlight';*/
      /* Modern Georgia-based serif stack */
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
     font-weight: bold;
-    text-align: right;
-    padding-right: 50px;
     font-size: 15px;
 }
 
@@ -47,7 +67,6 @@ body {
 .blurb a {
   color: black;
   text-decoration: underline;
-  /*color: #bdc3c7;*/
 }
 
 /* mouse over link */
