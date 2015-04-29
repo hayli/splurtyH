@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Include Factory girl gem for our test suite
+gem "factory_girl_rails", "~> 4.0"
+
 gem 'simple_form'
 
 # Include twitter bootstrap-sass for responsive design
